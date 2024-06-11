@@ -12,11 +12,15 @@ A basic webpage made for hobby cooking enthusiasts. Users can see, upload, and d
     ```sh
     git clone https://github.com/JanKastelic1/NUKS_PROJEKT.git
     ```
-2. Build the Docker image:
+2. Unzip the downloaded file:
+    ```sh
+    unzip NUKS_PROJEKT.zip
+    ```
+3. Build the Docker image:
     ```sh
     docker build -t recipe-manager -f Kit.dockerfile .
     ```
-3. Run the Docker container:
+4. Run the Docker container:
     ```sh
     docker run -p 8000:8000 recipe-manager
     ```
